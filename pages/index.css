@@ -1,0 +1,116 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/root.css);
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/game.css);
+@import url(../blocks/character.css);
+@import url(../blocks/gameplay.css);
+@import url(../blocks/display.css);
+@import url(../blocks/interaction.css);
+@import url(../blocks/button.css);
+@import url(../blocks/input.css);
+@import url(../blocks/footer.css);
+
+/* =========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.u-hidden {
+  display: none;
+}
+
+.u-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.u-margin-top {
+  margin-top: 1rem;
+}
+
+/* =========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .game {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .character {
+    max-height: 250px;
+  }
+
+  .character__mobile-toggle {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
+
+  .header__title {
+    font-size: 1.4rem;
+  }
+
+  .game {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .character {
+    position: relative;
+  }
+
+  .character__mobile-toggle {
+    display: block !important;
+  }
+
+  .interaction__buttons {
+    justify-content: center;
+  }
+
+  .interaction__input {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Force character sheet to be expanded on tablet and desktop */
+  .character--mobile-collapsed {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .character--mobile-collapsed .character__info {
+    display: flex !important;
+  }
+
+  .character--mobile-collapsed .character__title {
+    display: block !important;
+  }
+
+  .character__mobile-toggle {
+    display: none !important;
+  }
+}

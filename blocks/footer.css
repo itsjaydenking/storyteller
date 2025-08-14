@@ -1,0 +1,38 @@
+.footer {
+  background: linear-gradient(
+    45deg,
+    var(--color-black) 0%,
+    var(--color-gray-dark) 50%,
+    var(--color-black) 100%
+  );
+  padding: 0.75rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-gray-light);
+  border-top: 1px solid var(--color-primary-yellow);
+  position: relative;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(252, 194, 1, 0.1) 20%,
+    rgba(35, 97, 146, 0.1) 50%,
+    rgba(233, 60, 172, 0.1) 80%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.footer * {
+  position: relative;
+  z-index: 1;
+}

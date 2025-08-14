@@ -1,0 +1,32 @@
+:root {
+  /* == PRIMARY PALETTE == */
+
+  /* Pantone 647C - Blue */
+  --color-primary-blue: #236192;
+  --color-primary-blue-rgb: rgb(35, 97, 146);
+  --color-primary-blue-cmyk: cmyk(76, 34, 0, 43);
+
+  /* Pantone 2695C - Dark Purple */
+  --color-primary-purple: #2e1a47;
+  --color-primary-purple-rgb: rgb(46, 26, 71);
+  --color-primary-purple-cmyk: cmyk(35, 63, 0, 73);
+
+  /* Pantone 232C - Pink */
+  --color-primary-pink: #e93cac;
+  --color-primary-pink-rgb: rgb(233, 60, 172);
+  --color-primary-pink-cmyk: cmyk(0, 74, 26, 9);
+
+  /* Pantone Golden Poppy - Yellow */
+  --color-primary-yellow: #fcc201;
+  --color-primary-yellow-rgb: rgb(252, 194, 1);
+  --color-primary-yellow-cmyk: cmyk(0, 23, 100, 1);
+
+  /* == UTILITY COLORS == */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-light: #c8c8c8;
+  --color-gray: #7d7d7d;
+  --color-gray-dark: #323232;
+}
+
+/* Special thanks to Kudaichi for the Brand Kit */

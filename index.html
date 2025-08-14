@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Storyteller</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__body">
+        <header class="header">
+          <h1 class="header__title">Project Storyteller</h1>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item" data-action="save">save</li>
+              <li class="nav__item" data-action="load">load</li>
+              <li class="nav__item" data-action="settings">settings</li>
+              <li class="nav__item" data-action="help">help</li>
+              <li class="nav__item" data-action="about">about</li>
+              <li class="nav__item" data-action="new-game">new game</li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Main game area -->
+        <main class="game">
+          <!-- Character sheet section -->
+          <aside class="character">
+            <button
+              class="character__mobile-toggle"
+              aria-label="Toggle character sheet"
+            >
+              📋
+            </button>
+            <div class="character__sheet">
+              <h2 class="character__title">Character</h2>
+              <div class="character__info">
+                <!-- Character details will be populated here -->
+              </div>
+            </div>
+          </aside>
+
+          <!-- Gameplay section -->
+          <section class="gameplay">
+            <!-- Display section -->
+            <div class="display">
+              <div class="display__content">
+                <!-- Game text, images, and narrative content -->
+              </div>
+            </div>
+
+            <!-- Interaction section -->
+            <div class="interaction">
+              <div class="interaction__btns">
+                <!-- Dynamic buttons will be populated here -->
+              </div>
+              <form class="interaction__input">
+                <input
+                  type="text"
+                  class="input input--text"
+                  placeholder="Enter your action..."
+                />
+                <button type="submit" class="btn btn--submit">Submit</button>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <!-- Status information, version, etc. -->
+        </footer>
+      </div>
+    </div>
+    <script src="./pages/index.js" type="module"></script>
+  </body>
+</html>

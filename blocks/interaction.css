@@ -1,0 +1,55 @@
+.interaction {
+  background: linear-gradient(
+    135deg,
+    var(--color-gray-dark) 0%,
+    rgba(35, 97, 146, 0.2) 50%,
+    var(--color-black) 100%
+  );
+  border: 2px solid var(--color-primary-pink);
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 1rem;
+  position: relative;
+  box-shadow: inset 0 0 15px rgba(233, 60, 172, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.interaction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 70% 30%,
+      rgba(233, 60, 172, 0.08) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      rgba(252, 194, 1, 0.03) 50%,
+      transparent 100%
+    );
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.interaction__btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-content: start;
+  position: relative;
+  z-index: 1;
+}
+
+.interaction__input {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
